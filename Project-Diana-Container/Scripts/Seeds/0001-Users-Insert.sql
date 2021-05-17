@@ -1,0 +1,41 @@
+USE [CinderellaCore]
+GO
+
+INSERT [dbo].[aspnetusers]
+       ([id],
+        [username],
+        [normalizedusername],
+        [email],
+        [normalizedemail],
+        [emailconfirmed],
+        [passwordhash],
+        [securitystamp],
+        [concurrencystamp],
+        [phonenumber],
+        [phonenumberconfirmed],
+        [twofactorenabled],
+        [lockoutend],
+        [lockoutenabled],
+        [accessfailedcount],
+        [usernum],
+        [enableimport],
+        [displayname])
+VALUES ('3def12c9-2b38-4685-8f70-f37ac2be076d',
+        'dsilva609@gmail.com',
+        'DSILVA609@GMAIL.COM',
+        'dsilva609@gmail.com',
+        'DSILVA609@GMAIL.COM',
+        1,
+		'AQAAAAEAACcQAAAAENvPe75gG1yeex0YuTzvdpzdL9YgvLa9DbJscdrWurZMHjwkhjesGjOiIYxf6CxO7A==',
+		'4QSIZNQ6PH3XIKJ724DWOP5J2LOLXFOE',
+		'6510b590-1cdf-4d18-87bc-9cdf0c391d65',
+		NULL,
+		0,
+		0,
+		NULL,
+		1,
+		0,
+		1,
+		0,
+		'holy_diver')
+GO

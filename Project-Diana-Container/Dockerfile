@@ -9,7 +9,8 @@ USER root
 
 COPY ./Scripts/Initialize.sql /Scripts/
 COPY ./Scripts/Databases /Scripts/Databases/
-COPY ./Scripts/Tables /Scripts/Tables/
+COPY ./Scripts/Seeds /Scripts/Seeds/
+COPY ./Scripts/Tables /Scripts/Tables/ 
 
 RUN /opt/mssql/bin/sqlservr --accept-eula & sleep 23 \
     && /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P $SA_PASSWORD -i Scripts/Initialize.sql \
